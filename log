@@ -91,3 +91,14 @@ treemap.c:130:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 fcdda11
+Mon 26 Sep 2022 01:45:05 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:130:10: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  130 |   return aux;
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+afb689e
